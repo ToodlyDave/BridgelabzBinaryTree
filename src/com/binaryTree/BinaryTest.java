@@ -10,6 +10,8 @@ public class BinaryTest {
 		obj.insert(56);
 		obj.insert(30);
 		obj.insert(70);
+		
+		obj.size();
 	}
 
 }

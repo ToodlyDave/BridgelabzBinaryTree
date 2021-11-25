@@ -38,4 +38,16 @@ public class BinaryTreeServices {
 		System.out.print(" " + root.data);
 		display(root.right);
 	}
+	
+	public void size() {
+		System.out.println(" The size of the tree is: " + sizeAll(root));
+	}
+	
+	public int sizeAll(Node root) {
+		
+		if (root == null)
+			return 0;
+		
+		return sizeAll(root.left) + sizeAll(root.right) + 1;
+	}
 }
